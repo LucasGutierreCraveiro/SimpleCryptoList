@@ -1,5 +1,7 @@
 # Simple Crypto List
 
+You can try it out here https://simple-crypto-list.vercel.app/ for a limited time.
+
 ### Prerequisites
 
 - NodeJS v16
