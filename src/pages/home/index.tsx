@@ -12,6 +12,7 @@ export default function HomePage() {
   const isLoadingTableData = isLoading || isFetching;
 
   const handleSelectChange = (value: string) => {
+    if (value === "none") setOrderBy("");
     setOrderBy(value);
   };
 
@@ -52,6 +53,7 @@ export default function HomePage() {
             <Select.Content>
               <Select.Group className="truncate">
                 <Select.Label>Order By</Select.Label>
+                <Select.Item value="none"></Select.Item>
                 <Select.Item value="price_asc">Price Asc.</Select.Item>
                 <Select.Item value="price_desc">Price Desc.</Select.Item>
                 <Select.Item value="volume_asc">Volume Asc.</Select.Item>

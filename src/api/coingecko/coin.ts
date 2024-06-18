@@ -20,6 +20,7 @@ export const useCoinList = (props: Props) =>
 type CoinInfoProps = {
   id: string;
 };
+
 export const useCoinFullInfo = (props: CoinInfoProps) =>
   useQuery({
     queryKey: coinKeys.list.root,
